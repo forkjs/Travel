@@ -10,6 +10,11 @@ Vue.config.productionTip = false
 new Vue({
   el: '#app',
   router,
-  components: { App },
-  template: '<App/>'
+  components: { App }, // 等价于components: { App: App}
+  template: '<App/>' // 模板里面渲染的是App这个组件
 })
+
+// 注意在 ES2015+ 中，在对象中放一个类似 ComponentA 的变量名其实是 ComponentA: ComponentA 的缩写，
+// 即这个变量名同时是：
+// 用在模板中的自定义元素的名称
+// 包含了这个组件选项的变量名
