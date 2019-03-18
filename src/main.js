@@ -2,17 +2,21 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App'
-import router from './router'
+import router from './router' // 路由根据不同的网址返回不同的内容
+import fastClick from 'fastclick'
+import './assets/style/reset.css'
+import './assets/style/border.css'
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
+fastClick.attach(document.body);
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
-  router,
+  router, //等价于router: router
   components: { App }, // 等价于components: { App: App}
   template: '<App/>' // 模板里面渲染的是App这个组件
-})
+});
 
 // 注意在 ES2015+ 中，在对象中放一个类似 ComponentA 的变量名其实是 ComponentA: ComponentA 的缩写，
 // 即这个变量名同时是：
