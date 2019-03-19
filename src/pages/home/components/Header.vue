@@ -22,8 +22,8 @@
 <!--scoped限制样式只对当前组件生效-->
 <style lang="stylus" scoped>
   // 样式中引入样式import要加@前缀
-  // 且引用的内容路径别名前要加~(如@: ~@; styles: ~styles)
-  @import "../../../assets/styles/varibles.styl"
+  // 且引用的内容路径别名前要加~(如@: ~@; style: ~style)
+  @import "~@/assets/style/varibles.styl"
   // stylus语法不用写{}
   // 1rem = html font-size = 50px
   .header

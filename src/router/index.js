@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-// import HelloWorld from '@/components/HelloWorld' // @指src目录
-import Home from '@/pages/home/Home'
+import Home from '@/pages/home/Home' // '@': resolve('src')
 
 Vue.use(Router);
 
