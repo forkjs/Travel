@@ -6,6 +6,7 @@ import router from './router' // 路由根据不同的网址返回不同的内�
 import fastClick from 'fastclick'
 import './assets/style/reset.css'
 import './assets/style/border.css'
+import './assets/style/iconfont.css'
 
 Vue.config.productionTip = false;
 fastClick.attach(document.body);
