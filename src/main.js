@@ -4,9 +4,9 @@ import Vue from 'vue'
 import App from './App'
 import router from './router' // 路由根据不同的网址返回不同的内容
 import fastClick from 'fastclick'
-import './assets/style/reset.css'
-import './assets/style/border.css'
-import './assets/style/iconfont.css'
+import 'styles/reset.css'
+import 'styles/border.css'
+import 'styles/iconfont.css'
 
 Vue.config.productionTip = false;
 fastClick.attach(document.body);
