@@ -5,18 +5,22 @@
     </div>
     <div class="header-input">
       <span class="iconfont">&#xe632;</span>
-      输入城市/游玩/景点/主题</div>
+      输入城市/游玩/景点/主题
+    </div>
     <div class="header-right">
-      城市
+      {{this.city}}
       <span class="iconfont arrow-icon">&#xe6aa;</span>
     </div>
   </div>
 </template>
 
 <script>
-    export default {
-        name: "HomeHeader"
-    }
+  export default {
+    name: "HomeHeader",
+    props: {
+      city: String,
+    },
+  }
 </script>
 
 <!--scoped限制样式只对当前组件生效-->

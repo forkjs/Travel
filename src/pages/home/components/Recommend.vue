@@ -4,7 +4,7 @@
     <ul>
       <li
         class="item border-bottom"
-        v-for="item of recommendList"
+        v-for="item of list"
         :key="item.id"
       >
         <img class="item-img" :src="item.imgUrl">
@@ -21,30 +21,33 @@
 <script>
   export default {
     name: "HomeRecommend",
-    data () {
-      return {
-        recommendList: [
-          {
-            id: "0001",
-            imgUrl: "http://img1.qunarzz.com/sight/p0/1508/fe/434ee530e21f1c11bad088e8cc8d5e93.water.jpg_200x200_912ce9f4.jpg",
-            title: "鸟巢",
-            desc: "Bird\'s nest"
-          },
-          {
-            id: "0002",
-            imgUrl: "http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_200x200_1bc99086.jpg",
-            title: "故宫",
-            desc: "The Palace Museum"
-          },
-          {
-            id: "0003",
-            imgUrl: "http://img1.qunarzz.com/sight/p0/1603/ad/ad84d5339c3a34f390.water.jpg_200x200_788cb0d2.jpg",
-            title: "十渡风景区",
-            desc: "Shidu scenic spot"
-          },
-        ]
-      }
-    }
+    props: {
+      list: Array
+    },
+    // data () {
+    //   return {
+    //     recommendList: [
+    //       {
+    //         id: "0001",
+    //         imgUrl: "http://img1.qunarzz.com/sight/p0/1508/fe/434ee530e21f1c11bad088e8cc8d5e93.water.jpg_200x200_912ce9f4.jpg",
+    //         title: "鸟巢",
+    //         desc: "Bird\'s nest"
+    //       },
+    //       {
+    //         id: "0002",
+    //         imgUrl: "http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_200x200_1bc99086.jpg",
+    //         title: "故宫",
+    //         desc: "The Palace Museum"
+    //       },
+    //       {
+    //         id: "0003",
+    //         imgUrl: "http://img1.qunarzz.com/sight/p0/1603/ad/ad84d5339c3a34f390.water.jpg_200x200_788cb0d2.jpg",
+    //         title: "十渡风景区",
+    //         desc: "Shidu scenic spot"
+    //       },
+    //     ]
+    //   }
+    // }
   }
 </script>
 
