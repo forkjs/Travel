@@ -3,6 +3,7 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router' // 路由根据不同的网址返回不同的内容
+import store from './store'
 import fastClick from 'fastclick'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import 'swiper/dist/css/swiper.css'
@@ -18,6 +19,7 @@ Vue.use(VueAwesomeSwiper, /* { default global options } */);
 new Vue({
   el: '#app',
   router, //等价于router: router
+  store,
   components: { App }, // 等价于components: { App: App}
   template: '<App/>' // 模板里面渲染的是App这个组件
 });
