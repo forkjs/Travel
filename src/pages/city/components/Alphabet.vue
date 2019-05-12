@@ -36,6 +36,8 @@
       letters () {
         const letters = [];
         for (let i in this.cities) {
+          // console.log(typeof this.cities);
+          // console.log(typeof JSON.stringify(i));
           letters.push(i)
         }
         return letters
@@ -44,7 +46,7 @@
     methods: {
       handleLetterClick (e) {
         // console.log(e);
-        // console.log(e.target.innerText)
+        console.log(e.target.innerText);
         this.$emit('change', e.target.innerText)
       },
       handleTouchStart () {
