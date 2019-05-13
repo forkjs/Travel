@@ -6,6 +6,7 @@ import router from './router' // 路由根据不同的网址返回不同的内�
 import store from './store'
 import fastClick from 'fastclick'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
+import 'babel-polyfill'
 import 'swiper/dist/css/swiper.css'
 import 'style/reset.css'
 import 'style/border.css'
